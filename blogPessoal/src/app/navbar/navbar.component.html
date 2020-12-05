@@ -16,6 +16,32 @@
             <!--Classe Texto abaixo utilizada foi criada manualmente para separar as letras e aumentar o tamanho-->
           <a class="nav-link text-monospace text-uppercase font-weight-bold p-3 texto" routerLink='/feed'>Feed</a>
         </li>
+
+
+
+        <div *ngIf='auth.btnLogin()'>
+          <li class="nav-item">
+            <!--Classe Texto abaixo utilizada foi criada manualmente para separar as letras e aumentar o tamanho-->
+          <a class="nav-link text-monospace text-uppercase font-weight-bold p-3 texto" routerLink='/login'>Login</a>
+          </li>
+        </div>
+
+
+        <div *ngIf='auth.btnLogin()'>
+          <li class="nav-item">
+            <!--Classe Texto abaixo utilizada foi criada manualmente para separar as letras e aumentar o tamanho-->
+          <a class="nav-link text-monospace text-uppercase font-weight-bold p-3 texto" routerLink='/cadastro'>Cadastro</a>
+          </li>
+        </div>
+      
+        
+        <div *ngIf='auth.btnSair()'>
+          <li class="nav-item">
+            <!--Classe Texto abaixo utilizada foi criada manualmente para separar as letras e aumentar o tamanho-->
+          <a class="nav-link text-monospace text-uppercase font-weight-bold p-3 texto" (click)='sair()'>Sair</a>
+          </li>
+        </div>
+
       </ul>
     </div>
 

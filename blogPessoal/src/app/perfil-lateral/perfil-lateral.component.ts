@@ -8,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class PerfilLateralComponent implements OnInit {
 
 
-  
+  nome: string; //variavel criada para fazer a interpolação
 
   constructor() { }
 
   ngOnInit(){
-    
+    this.nome = 'Willian Smith' //definindo um valor para a variavel criada acima 
   }
 
 }
